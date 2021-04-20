@@ -4,3 +4,14 @@
  * вернет true если testPassword и password внутри функции совпадут
  * и false если не совпадут
  */
+
+const myPassword = function (password) {
+  return function (myPass) {
+    return myPass === password;
+  };
+};
+
+const testMyPassword = myPassword('myPassThis');
+
+console.log(testMyPassword('123123'));
+console.log(testMyPassword('myPassThis'));

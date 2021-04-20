@@ -7,3 +7,14 @@
  *
  * Выведите результат в консоль
  */
+
+const getCounter = function () {
+  return function () {
+    return (this.i += 1);
+  };
+};
+
+const counter1 = getCounter().bind({ i: 0 });
+const counter2 = getCounter().bind({ i: 10 });
+console.log(counter1());
+console.log(counter2());

@@ -6,13 +6,13 @@
  */
 
 const result = [];
-
+const fun = i => {
+  return function () {
+    console.log(i);
+  };
+};
 for (var i = 0; i < 5; i++) {
-  result[i] = (function (currentI) {
-    return function () {
-      console.log(currentI);
-    };
-  })(i);
+  result[i] = fun(i);
 }
 
 // console.log(i);

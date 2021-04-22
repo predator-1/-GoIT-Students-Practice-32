@@ -1,18 +1,22 @@
 /**
- * Области применения 'use strict'
+ * Области применения
  * Поробовать использовать глобально и внутри функции.
  * Вывести все возможные this в консоль
  */
-
+'use strict';
 console.log(this);
 
 function test() {
-  'use strict';
-
   console.log(this);
   return () => {
     console.log(this);
   };
 }
 
-test()();
+function test2() {
+  console.log(this);
+}
+
+const fun = test();
+fun();
+test2();

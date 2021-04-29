@@ -117,3 +117,23 @@ const array = [
   { id: 76, text: 'This is High', priority: 'High' },
   { id: 32, text: 'This is High', priority: 'High' },
 ];
+/**
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+ */
+// console.log(Object.values(PRIORITY));
+const sortTasks = tasks => {
+  const priorities = Object.values(PRIORITY);
+  return tasks.sort((task1, task2) => {
+    const priority1 = priorities.indexOf(task1.priority);
+    const priority2 = priorities.indexOf(task2.priority);
+    if (priority1 < priority2) {
+      return -1; // negative value
+    }
+    if (priority1 === priority2) {
+      return task1.id - task2.id;
+    }
+    return 1; // positive value
+  });
+};
+
+console.table(sortTasks(array));

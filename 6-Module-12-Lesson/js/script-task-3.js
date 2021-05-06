@@ -1,6 +1,6 @@
 /**
  * Найдите елемент с самой большой ценой price
- * Найдите самый большой price
+ * Найдите самый минимальный price
  */
 
 const phones = [
@@ -14,3 +14,23 @@ const phones = [
   { name: 'Samsung', price: 1000 },
   { name: 'Huawei', price: 650 },
 ];
+
+const getItemWithMaxPrice = items => {
+  return items.reduce((acc, item) => {
+    return acc.price < item.price ? item : acc;
+  });
+};
+
+console.log(getItemWithMaxPrice(phones));
+
+const getMinPrice = items => {
+  return items.reduce((acc, item) => {
+    if (acc > item.price) {
+      return item.price;
+    }
+    return acc;
+  }, Number.MAX_SAFE_INTEGER);
+};
+
+console.log(getMinPrice(phones));
+console.log(getMinPrice([]));

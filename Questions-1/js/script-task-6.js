@@ -9,10 +9,12 @@
  * Типов транзацкий всего два.
  * Можно положить либо снять деньги со счета.
  */
-const Transaction = {
+const TRANSACTION = {
   DEPOSIT: 'deposit',
   WITHDRAW: 'withdraw',
 };
+
+//DRY https://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself
 
 /*
  * Каждая транзакция это объект со свойствами: id, type и amount

@@ -1,4 +1,5 @@
 // Отсортируй массив по height, если они одинаковые - то по age
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
 const users = [
   {
@@ -22,3 +23,7 @@ const users = [
     age: 30,
   },
 ];
+
+users.sort((a, b) => a.height - b.height || a.age - b.age);
+
+console.log(users);

@@ -1,0 +1,19 @@
+{
+  "name": "goit-students-practice-1-1",
+  "version": "1.0.0",
+  "description": "GoIT Students Practice 1 module 1 lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/predator-1/GoIT-Students-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/predator-1/GoIT-Students-Practice/issues"
+  },
+  "homepage": "https://github.com/predator-1/GoIT-Students-Practice#readme"
+}

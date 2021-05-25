@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <style>
+      .tree__sub-tree {
+        display: none;
+      }
+
+      .tree__sub-tree_open {
+        display: block;
+      }
+
+      .tree__item {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="tree">
+      <li class="tree__item">
+        Mammal
+        <ul class="tree__sub-tree">
+          <li class="tree__item">
+            Ungulates
+            <ul class="tree__sub-tree">
+              <li class="tree__item">Cow</li>
+              <li class="tree__item">Bizon</li>
+              <li class="tree__item">Horse</li>
+              <li class="tree__item">Goat</li>
+            </ul>
+          </li>
+          <li class="tree__item">
+            Cats
+            <ul class="tree__sub-tree">
+              <li class="tree__item">Tiger</li>
+              <li class="tree__item">Lion</li>
+              <li class="tree__item">Home cat</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="tree__item">
+        Fish
+        <ul class="tree__sub-tree">
+          <li class="tree__item">
+            Home
+            <ul class="tree__sub-tree">
+              <li class="tree__item">Guppies</li>
+              <li class="tree__item">Oscar</li>
+            </ul>
+          </li>
+          <li class="tree__item">
+            Sea
+            <ul class="tree__sub-tree">
+              <li class="tree__item">Tuna</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="../js/script-task-3.js"></script>
+  </body>
+</html>

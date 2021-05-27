@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+      }
+
+      .sections {
+        width: 500px;
+        height: 150px;
+        overflow: auto;
+        border: 1px solid red;
+      }
+
+      .wrapper {
+        display: flex;
+      }
+
+      .section {
+        background-color: blanchedalmond;
+      }
+
+      .input {
+        writing-mode: bt-lr; /* IE */
+        -webkit-appearance: slider-vertical; /* WebKit */
+        width: 8px;
+        height: 150px;
+        padding: 0 5px;
+        transform: rotate(180deg);
+      }
+
+      img {
+        float: left;
+        margin: 7px 7px 7px 0;
+        width: 100px;
+        height: 70px;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0 0 10px 0;
+        padding: 0;
+      }
+
+      .menu li {
+        background-color: #7e7eff;
+        color: white;
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .menu li:hover {
+        background-color: #6767ce;
+      }
+
+      .menu li.active {
+        background-color: #ce9967;
+      }
+
+      .progress {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Scroll: <span class="title">0</span></h4>
+
+    <nav>
+      <ul class="menu">
+        <li data-id="section-1">Section 1</li>
+        <li data-id="section-2">Section 2</li>
+        <li data-id="section-3">Section 3</li>
+        <li data-id="section-4">Section 4</li>
+        <li data-id="section-5">Section 5</li>
+      </ul>
+      <progress class="progress" value="0" max="1675"></progress>
+    </nav>
+
+    <div class="wrapper">
+      <div class="sections">
+        <section class="section" data-id="section-1">
+          <h3>Section 1</h3>
+          <p>
+            <img
+              src=""
+              data-url="https://picsum.photos/id/237/100/70"
+              class="leftimg"
+              alt="image"
+            />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            recusandae porro molestias sequi ullam esse. Impedit nam velit qui
+            quasi doloribus accusantium dolorum dolore sit! Corrupti non eum
+            quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Suscipit neque deleniti voluptatem soluta veniam hic corporis
+            deserunt accusantium, cum illum ipsam ullam tenetur quibusdam ab
+            obcaecati sint voluptas rerum quisquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eum explicabo atque tempora fuga!
+            Consequuntur illum debitis culpa doloribus quasi non voluptas
+            ratione odio atque, mollitia, nisi ipsam quibusdam aliquam laborum.
+          </p>
+        </section>
+        <hr />
+
+        <section class="section" data-id="section-2">
+          <h3>Section 2</h3>
+          <p>
+            <img
+              src=""
+              data-url="https://picsum.photos/id/238/100/70"
+              class="leftimg"
+              alt="image"
+            />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            recusandae porro molestias sequi ullam esse. Impedit nam velit qui
+            quasi doloribus accusantium dolorum dolore sit! Corrupti non eum
+            quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Suscipit neque deleniti voluptatem soluta veniam hic corporis
+            deserunt accusantium, cum illum ipsam ullam tenetur quibusdam ab
+            obcaecati sint voluptas rerum quisquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eum explicabo atque tempora fuga!
+            Consequuntur illum debitis culpa doloribus quasi non voluptas
+            ratione odio atque, mollitia, nisi ipsam quibusdam aliquam laborum.
+          </p>
+        </section>
+        <hr />
+
+        <section class="section" data-id="section-3">
+          <h3>Section 3</h3>
+          <p>
+            <img
+              src=""
+              data-url="https://picsum.photos/id/239/100/70"
+              class="leftimg"
+              alt="image"
+            />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            recusandae porro molestias sequi ullam esse. Impedit nam velit qui
+            quasi doloribus accusantium dolorum dolore sit! Corrupti non eum
+            quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Suscipit neque deleniti voluptatem soluta veniam hic corporis
+            deserunt accusantium, cum illum ipsam ullam tenetur quibusdam ab
+            obcaecati sint voluptas rerum quisquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eum explicabo atque tempora fuga!
+            Consequuntur illum debitis culpa doloribus quasi non voluptas
+            ratione odio atque, mollitia, nisi ipsam quibusdam aliquam laborum.
+          </p>
+        </section>
+        <hr />
+
+        <section class="section" data-id="section-4">
+          <h3>Section 4</h3>
+          <p>
+            <img
+              src=""
+              data-url="https://picsum.photos/id/240/100/70"
+              class="leftimg"
+              alt="image"
+            />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            recusandae porro molestias sequi ullam esse. Impedit nam velit qui
+            quasi doloribus accusantium dolorum dolore sit! Corrupti non eum
+            quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Suscipit neque deleniti voluptatem soluta veniam hic corporis
+            deserunt accusantium, cum illum ipsam ullam tenetur quibusdam ab
+            obcaecati sint voluptas rerum quisquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eum explicabo atque tempora fuga!
+            Consequuntur illum debitis culpa doloribus quasi non voluptas
+            ratione odio atque, mollitia, nisi ipsam quibusdam aliquam laborum.
+          </p>
+        </section>
+        <hr />
+
+        <section class="section" data-id="section-5">
+          <h3>Section 5</h3>
+          <p>
+            <img
+              src=""
+              data-url="https://picsum.photos/id/241/100/70"
+              class="leftimg"
+              alt="image"
+            />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+            recusandae porro molestias sequi ullam esse. Impedit nam velit qui
+            quasi doloribus accusantium dolorum dolore sit! Corrupti non eum
+            quasi sint! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Suscipit neque deleniti voluptatem soluta veniam hic corporis
+            deserunt accusantium, cum illum ipsam ullam tenetur quibusdam ab
+            obcaecati sint voluptas rerum quisquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eum explicabo atque tempora fuga!
+            Consequuntur illum debitis culpa doloribus quasi non voluptas
+            ratione odio atque, mollitia, nisi ipsam quibusdam aliquam laborum.
+          </p>
+        </section>
+        <hr />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+    <script src="../js/script-task-4.js"></script>
+  </body>
+</html>

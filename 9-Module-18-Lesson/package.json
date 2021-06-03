@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --stats-children",
     "build": "webpack",
     "build:babel": "babel src/index.js --presets=@babel/preset-env"
   },

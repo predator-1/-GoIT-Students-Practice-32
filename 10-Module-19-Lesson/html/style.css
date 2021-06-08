@@ -1,0 +1,25 @@
+.counter {
+  display: flex;
+  padding: 10px;
+}
+
+.counter .button {
+  width: 50px;
+}
+
+.counter .value {
+  padding: 10px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
+
+.timer .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}

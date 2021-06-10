@@ -1,8 +1,10 @@
 'use strict';
-
 /**
  * Create user presentation list
  */
+
+import './styles.css';
+import template from './userList.hbs';
 
 const data = {
   title: 'My User List',
@@ -14,3 +16,7 @@ const data = {
     ],
   },
 };
+
+const root = document.querySelector('#root');
+
+root.insertAdjacentHTML('beforeend', template(data));

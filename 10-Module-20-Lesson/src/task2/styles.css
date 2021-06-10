@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #211221;
+  text-align: left;
+}
+
+button {
+  cursor: pointer;
+}

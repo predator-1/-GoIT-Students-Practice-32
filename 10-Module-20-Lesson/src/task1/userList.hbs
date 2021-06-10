@@ -1,0 +1,10 @@
+<h3>{{title}}</h3>
+<ul>
+  {{#each data.users}}
+    {{#if this.isAdult}}
+      <li>{{this.name}} - {{this.age}}</li>
+    {{else}}
+      <li>{{this.name}} - not adult</li>
+    {{/if}}
+  {{/each}}
+</ul>

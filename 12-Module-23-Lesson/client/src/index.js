@@ -28,3 +28,12 @@ $('.input-form').on('submit', e => {
   }
   getNotes().then(render);
 });
+
+
+fetch('api/some_url', { method: 'GET'}).then(r => {
+  if(r.ok) {
+    console.log('ok');
+  } else {
+    console.log('not ok');
+  }
+}).catch(() => console.log('exception'));

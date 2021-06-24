@@ -1,0 +1,36 @@
+{
+  "name": "goit-students-practice-12-24",
+  "version": "1.0.0",
+  "description": "GoIT Students Practice 12 module 24 lesson",
+  "main": "src/task1/index.js",
+  "scripts": {
+    "start": "webpack serve --env mode=development",
+    "build": "webpack --env mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.4",
+    "handlebars-loader": "^1.7.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "webpackbar": "^5.0.0-3"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

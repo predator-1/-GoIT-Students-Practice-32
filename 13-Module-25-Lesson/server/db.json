@@ -4,6 +4,22 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "new post2",
+      "author": "alex g",
+      "id": 3
+    },
+    {
+      "title": "new post311",
+      "author": "alex g",
+      "id": 4,
+      "email": "abc2@gmail.com"
+    },
+    {
+      "title": "some new title",
+      "author": "alex g",
+      "id": 5
     }
   ],
   "comments": [
@@ -18,19 +34,9 @@
   },
   "users": [
     {
-      "name": "Peter",
-      "age": 20,
-      "id": 2
-    },
-    {
-      "name": "Chris",
-      "age": 20,
-      "id": 3
-    },
-    {
-      "name": "Chris",
-      "age": 35,
-      "id": 4
+      "email": "abc@gmail.com",
+      "password": "$2a$10$KgL36QtqfWpCaYQvmrjObuVs2NJ7Mqkr4RXM1.zrGDJ0rIPY2tfzu",
+      "id": 1
     }
   ]
 }
